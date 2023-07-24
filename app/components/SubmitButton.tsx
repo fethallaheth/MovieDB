@@ -1,9 +1,9 @@
 "use client";
 
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { experimental_useFormStatus as experimental_useFormStatus} from "react-dom";
 
 export default function SubmitButton() {
-  const { pending } = useFormStatus();
+  const { pending } = experimental_useFormStatus();
   return (
     <button
       type="submit"
